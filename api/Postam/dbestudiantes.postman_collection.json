@@ -1,0 +1,787 @@
+{
+	"info": {
+		"_postman_id": "ae05382b-0087-42ee-8a7a-b830cf7aa6d8",
+		"name": "dbestudiantes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/estudiantes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"estudiantes"
+					]
+				},
+				"description": "Mostrar todos los estudiantes"
+			},
+			"response": []
+		},
+		{
+			"name": "Put student",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "apellido2",
+							"value": "NEGRETE",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/estudiante/5d4a1dd018caaa1894d98f58",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"estudiante",
+						"5d4a1dd018caaa1894d98f58"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Student",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/estudiante/5d4a1e0e18caaa1894d98f59",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"estudiante",
+						"5d4a1e0e18caaa1894d98f59"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create student",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Anderson",
+							"type": "text"
+						},
+						{
+							"key": "nombre2",
+							"value": "Alejandro",
+							"type": "text"
+						},
+						{
+							"key": "apellido",
+							"value": "Zambrano",
+							"type": "text"
+						},
+						{
+							"key": "apellido2",
+							"value": "Negrete",
+							"type": "text"
+						},
+						{
+							"key": "identificacion",
+							"value": "10567893450",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/estudiantes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"estudiantes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Materias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/materias",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"materias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create materia",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Diseño de software",
+							"type": "text"
+						},
+						{
+							"key": "nmateria",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "creditos",
+							"value": "6",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/materias",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"materias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete materia",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/materia/5d4a1f629028df1a307bd721",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"materia",
+						"5d4a1f629028df1a307bd721"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get autores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/autores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"autores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post autor",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Patricia",
+							"type": "text"
+						},
+						{
+							"key": "nombre2",
+							"value": "Milena",
+							"type": "text"
+						},
+						{
+							"key": "apellido",
+							"value": "Suarez",
+							"type": "text"
+						},
+						{
+							"key": "apellido2",
+							"value": "Ortega",
+							"type": "text"
+						},
+						{
+							"key": "identificacion",
+							"value": "103497545",
+							"type": "text"
+						},
+						{
+							"key": "redesSociales",
+							"value": "WhatsApp",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/autores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"autores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put autor",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Cesar",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/autor/5d4a3e67fdd8592f31fd5792",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"autor",
+						"5d4a3e67fdd8592f31fd5792"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete autor",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/autor/5d4a3f06fdd8592f31fd5793",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"autor",
+						"5d4a3f06fdd8592f31fd5793"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get canciones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/canciones",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"canciones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post canciones",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "los pollitos dicen",
+							"type": "text"
+						},
+						{
+							"key": "genero",
+							"value": "Infantil",
+							"type": "text"
+						},
+						{
+							"key": "duracion",
+							"value": "4minutos",
+							"type": "text"
+						},
+						{
+							"key": "nregistro",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/canciones",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"canciones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete canción",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/cancion/5d4a414107576e3415f58dd9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cancion",
+						"5d4a414107576e3415f58dd9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put canción",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "duracion",
+							"value": "6minutos",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/cancion/5d4a418e07576e3415f58dda",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cancion",
+						"5d4a418e07576e3415f58dda"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get notaestudiantes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/notaestudiantes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notaestudiantes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post notaestudiante",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nota1",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "nota2",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "nota3",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "promedio",
+							"value": "3,3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/notaestudiante",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notaestudiante"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete notaestudiante",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/nestudiante/5d4a4373713a63350fb2f05d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"nestudiante",
+						"5d4a4373713a63350fb2f05d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put notaestudiante",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nota1",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/notaestudiante/5d4a4373713a63350fb2f05d",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notaestudiante",
+						"5d4a4373713a63350fb2f05d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get temas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/temas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"temas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST tema",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "ntema",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "duracion",
+							"value": "12 clases",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/temas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"temas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete tema",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/tema/5d4a463a5fe2b3368b9c0c46",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tema",
+						"5d4a463a5fe2b3368b9c0c46"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put tema",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "ntema",
+							"value": "7",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/tema/5d4a463a5fe2b3368b9c0c46",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tema",
+						"5d4a463a5fe2b3368b9c0c46"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
