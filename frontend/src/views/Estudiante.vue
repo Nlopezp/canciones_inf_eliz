@@ -18,35 +18,29 @@
       <input type="text" class="form-control my-2" placeholder="Apellido" v-model="estudiante.apellido">
       <input type="text" class="form-control my-2" placeholder="Apellido2" v-model='estudiante.apellido2'>
       <input type="text" class="form-control my-2" placeholder="Identificación" v-model='estudiante.identificacion'>
-      <!-- <div>
-       <select v-model='estudiante.materia'>
-         <option disabled value="">Escoja una materia</option>
-         <option v-for='(std,index) in estudiantes' v-bind:value='estudiante' :key='index'>{{std.materia}}</option>
-       </select>
-      </div> -->
       <input type="text" class="form-control my-2" placeholder="Materia" v-model='estudiante.materia'>
       <button class="btn btn-dark sm my-2 mx-2" type="submit">Agregar</button>
     </form>
     <div class="table-responsive" >
        <table class="table">
-          <thead>
+          <thead>  
             <tr>
-              <th>Nombre</th>  
-              <th>Segundo Nombre</th>
-              <th>Apellido</th>
-              <th>Segundo Apellido</th>
-              <th>Identificación</th>
-              <th>Materia</th>
-              <th>Opciones</th>
-            </tr>
-          </thead>
+              <th>Nombre</th>     
+              <th>Segundo Nombre</th> 
+              <th>Apellido</th> 
+              <th>Segundo Apellido</th>    
+              <th>Identificación</th>  
+              <th>Materia</th>  
+              <th>Opciones</th>  
+            </tr>    
+          </thead>   
           <tbody>
             <tr v-for="(item, index) of estudiantes" :key='index'>
               <td>{{item.nombre}}</td>
               <td>{{item.nombre2}}</td>
-              <td>{{item.apellido}}</td>
-              <td>{{item.apellido2}}</td>
-              <td>{{item.identificacion}}</td> 
+              <td>{{item.apellido}}</td> 
+              <td>{{item.apellido2}}</td>  
+              <td>{{item.identificacion}}</td>   
               <td>{{item.materia}}</td>
               <!-- <td>{{item.materia.credito}}</td> -->
               <td>
