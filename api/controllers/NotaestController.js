@@ -39,18 +39,20 @@ let getNotaestudiante=(req,res)=>{
     })
 };
 let newNotaestudiante=(req,res)=>{
+    let not= req.body.nota1;
+    let not2 = req.body.nota2;
+    let not3 = req.body.nota3;
+    let suma = parseInt(not)+parseInt(not2)+parseInt(not3);
+    let prom = suma/3;
+    
+    console.log(prom);
     let notaestudiante=new Notaest({
-        promedio:[{
-            nota1: req.body.nota1,
-            nota2: req.body.nota2,
-            nota3: req.body.nota3,
-            notafinal: req.body.notafinal
-        }]
-        // total:req.body.total,
-        // tema:req.body.tema,
-        // estudiante:req.body.estudiante
+        nota1: req.body.nota1,
+        nota2: req.body.nota2,
+        nota3: req.body.nota3,
+        notafinal: prom 
     })
-    notaestudiante.save((err, notaestudiante,notafinal) => {
+    notaestudiante.save((err, notaestudiante) => {
         if (err) {
             res.status(500)
                 .json({
@@ -62,7 +64,7 @@ let newNotaestudiante=(req,res)=>{
                    notaestudiante
                 })
         }
-    })
+    }) 
 };
 
 let deleteNotaestudiante=(req,res)=>{
