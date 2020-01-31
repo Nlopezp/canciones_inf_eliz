@@ -21,11 +21,8 @@ app.use(history());
 app.use(express.static(path.join(__dirname,'public')));
 
 
-//config db
 // db local
-// let db="mongodb://locahost:27017/canciones_infantiles";
-// db nube [atlas]
-let db="mongodb+srv://bleda:2802@cluster0-fnnzo.mongodb.net/canciones_infantiles?retryWrites=true&w=majority"
+let db="mongodb://localhost:27017/canciones_infantiles";
 mongoose.set('useCreateIndex', true);
 
 //Promise

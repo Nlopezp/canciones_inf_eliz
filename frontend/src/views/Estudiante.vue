@@ -41,7 +41,7 @@
               <td>{{item.apellido}}</td> 
               <td>{{item.apellido2}}</td>  
               <td>{{item.identificacion}}</td>   
-              <td>{{item.materia}}</td>
+              <td>{{item.materia.nombre}}</td>
               <!-- <td>{{item.materia.credito}}</td> -->
               <td>
                 <button class="btn btn-danger my-2" @click="Deletestudent(item._id)">Eliminar</button>

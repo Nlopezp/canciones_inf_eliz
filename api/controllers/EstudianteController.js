@@ -2,7 +2,7 @@ import Estudiante from '../models/estudiante';
 // Estudiantes
 let getEstudiantes=(req,res)=>{
     Estudiante.find()
-       .populate('materia')
+       .populate('materia',{creditos: 0,_id:0})
        .exec((err,estudiantes)=>{
            if(err){
                res.status(500).send({
